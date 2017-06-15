@@ -234,17 +234,20 @@ class Wis3FirstModule extends Module
 
 	public function hookDisplayRightColumnProduct($params)
 	{
-		return $this->hookDisplayProductFurtherInformations();
+		//return $this->hookDisplayProductFurtherInformations();
+		return $this->displayAllProduct();
 	}
+
+
 
     public function hookDisplayFooterProduct($params)
 	{
-		return $this->hookDisplayProductFurtherInformations();
+		//return $this->hookDisplayProductFurtherInformations();
 	}
 
     public function hookDisplayProductButtons($params)
 	{
-		return $this->hookDisplayProductFurtherInformations();
+		//return $this->hookDisplayProductFurtherInformations();
 	}
 
     public function hookDisplayProductFurtherInformations()
@@ -282,4 +285,19 @@ class Wis3FirstModule extends Module
             $product_wis3->save();
         }
     }
+
+	public function displayAllProduct ()
+	{
+
+		$this->context->smarty->assign(array(
+			'yolo' => [
+				'toto',
+				'titi',
+				'tata'
+			],
+		));
+
+		return $this->display(__FILE__, 'table_all_product_wis3.tpl');
+
+	}
 }
