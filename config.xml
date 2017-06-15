@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>wis3firstmodule</name>
+	<displayName><![CDATA[wis3 first module]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[it\'s my first module !]]></description>
+	<author><![CDATA[moi]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
