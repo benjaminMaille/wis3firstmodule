@@ -1,8 +1,7 @@
 <div class="emplacement">
-{foreach $yolo as $y}
-<div class="prod">
-{$y}
-</div>
-{/foreach}
-
+    {foreach $same_products as $product}
+        <div class="prod">
+        {$product.name}
+        </div>
+    {/foreach}
 </div>

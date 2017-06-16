@@ -301,7 +301,7 @@ class Wis3FirstModule extends Module
 
         var_dump($same_products);
 
-		$this->context->smarty->assign($same_products);
+		$this->context->smarty->assign(array("same_products" => $same_products));
 
 		return $this->display(__FILE__, 'table_all_product_wis3.tpl');
 
