@@ -25,3 +25,20 @@
 * Don't forget to prefix your containers with your own identifier
 * to avoid any conflicts with others containers.
 */
+
+
+.emplacement{
+  display : flex;
+
+}
+.prod{
+  width : 100%;
+  border-left: 1px solid grey;
+
+  padding-right : 5px;
+  padding-left : 5px;
+  text-align : center;
+}
+.prod:last-child{
+  border-right: 1px solid grey;
+}
