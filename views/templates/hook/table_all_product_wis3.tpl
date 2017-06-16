@@ -1,7 +1,8 @@
-
+<div class="emplacement">
 {foreach $yolo as $y}
-<h1>
+<div class="prod">
 {$y}
-</h1>
-
+</div>
 {/foreach}
+
+</div>
