@@ -289,6 +289,7 @@ class Wis3FirstModule extends Module
 	public function displayAllProduct ()
 	{
 		$product = $this->context->controller->getProduct();
+
         
         $category = new Category ($product->id_category_default);
 
@@ -299,9 +300,10 @@ class Wis3FirstModule extends Module
             100
         );
 
-        var_dump($same_products);
-
-		$this->context->smarty->assign(array("same_products" => $same_products));
+		$this->context->smarty->assign(array(
+            "same_products" => $same_products,
+            "current_product_id" => $product->id
+        ));
 
 		return $this->display(__FILE__, 'table_all_product_wis3.tpl');
 
